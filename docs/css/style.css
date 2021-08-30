@@ -139,22 +139,6 @@ header{
     top:0;
 }
 
-
-
-
-@media (max-width:820px){
-    .banner .section-right{
-        float:none;
-        width:100%;
-    }
-    .banner .section-left{
-        display:none;
-    }
-    .logo{
-        background: transparent linear-gradient(90deg, #7319a9 0%, #ec0722 100%) 0 0 no-repeat padding-box;
-    }
-}
-
 /*Navigation*/
 .main-navbar {
     font-size: 1.1em;
@@ -234,54 +218,6 @@ a {
 }
 
 /*Navigation*/
-
-
-@media screen and (max-width: 820px) {
-    .dropdown-content {
-        -webkit-animation-name: none;
-        -webkit-animation-duration: 1s;
-        animation-name: none;
-        animation-duration: 1s;
-    }
-
-    .topnav a, .dropdown .dropbtn {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 820px) {
-    .active{
-        margin-left:0;
-    }
-    .topnav{
-        height:50px;
-        width:100%;
-        transition:0.5s;
-    }
-    .topnav.responsive {position: relative;height:70vh;overflow-y:auto;z-index:1;}
-    .topnav.responsive .icon {
-        /*position: absolute;*/
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-}
-
 
 
 /*CONTAINER*/
