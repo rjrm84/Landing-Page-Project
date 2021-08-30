@@ -198,7 +198,85 @@ header{
         background: transparent linear-gradient(90deg, #7319a9 0%, #ec0722 100%) 0 0 no-repeat padding-box;
     }
 }
+/*test*/
+.main-navbar {
+    font-size: 1.1em;
+    background: linear-gradient(90deg, #7319a9 0%, #ec0722 100%) 0 0 no-repeat padding-box;
+    position: fixed;
+    width: 100%;
+}
 
+.logo {
+    width: 20em;
+    padding-top: 0.6em;
+    padding-left: 1em;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    color: #dddddd;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-list > li {
+    text-align: center;
+    margin: 0.8em auto;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 0.5em;
+    right: 0.9em;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3em;
+}
+
+.active {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.activated {
+    border-bottom: 0.2em solid;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 3.5em;
+        align-items: center;
+    }
+
+    .logo {
+        padding-top: 0.1em;
+    }
+
+    .nav-list {
+        display: flex;
+        margin-right: 1.8em;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-list li {
+        margin-left: 2em;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/*teste */
 
 
 
@@ -262,10 +340,10 @@ header{
 .dropdown-content {
     overflow:hidden;
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-top:2px solid #ec0722;
     z-index: 1;
     -webkit-animation-name: slideIn;
@@ -393,6 +471,9 @@ header{
     width:90%;
     margin:auto;
 }
+.index-section1{
+    color: #ffffff;
+}
 
 .section1 td:nth-child(1){
     width:40%;
@@ -502,6 +583,8 @@ header{
 
 
 
+
+
 /*SECTION3*/
 .section3{
     width:100%;
@@ -515,6 +598,7 @@ header{
 .section3 .cards{
     width:50%;
 }
+
 
 .section3 .cards .card{
     display:block;
@@ -531,16 +615,16 @@ header{
     background:rgba(255,255,255,0.9);
 }
 
-.section3 .cards .card section{
+.section3 .cards .card span{
     padding:1rem;
 }
 
-.section3 .cards .card section h4{
+.section3 .cards .card span h4{
     color:gray;
     font-weight:200;
 }
 
-.section3 .cards .card section h1{
+.section3 .cards .card span h1{
     color:#ec0722;
 }
 
