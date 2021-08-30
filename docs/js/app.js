@@ -1,21 +1,11 @@
-//NAVIGATION
-// function myFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "topnav") {
-//         x.className += " responsive";
-//     } else {
-//         x.className = "topnav";
-//     }
-// }
-/*JS test*/
+
+/*JS For nav*/
 /* Creates an array of all section items. */
 const navItems = [];
 const sections = Array.from(document.getElementsByTagName("section"));
 
-/* Iterates through the array creating the li element and the a element and
-   adds it to the element ul.
-   Stores the reference of the element a and the reference of the
-   corresponding section. */
+/* creating the li element and the a element and
+   adds it to the element ul. */
 const createNavigation = (sections) => {
     const navigation = document.getElementById('js-nav-list');
 
@@ -24,8 +14,7 @@ const createNavigation = (sections) => {
         const aElement = document.createElement('a');
 
         aElement.textContent = section.firstElementChild.textContent;
-        /* Add the cursor property with the value of pointer since the element "a"
-           does not have this property when the href does not exist.*/
+        /* Add the cursor property with the value of pointer since the element "a".*/
         aElement.style.setProperty('cursor', 'pointer');
 
         liElement.appendChild(aElement);
@@ -51,14 +40,12 @@ navBarToggle.addEventListener('click', function () {
     navList.classList.toggle('active');
 });
 
-
-/* Check which session is in the viewport and apply the class css activated
+/* Apply the class css activated
    in the navigation item corresponding to that section.*/
 const activatedNavList = () => {
     let windowY = window.pageYOffset;
 
-    /* In navItems we already have a reference to the a element
-       and the corresponding section element.*/
+
     navItems.forEach(({elementSection, elementNav}) => {
         const elementSectionTop = elementSection.offsetTop - 250;
         const elementSectionContent = elementSection.offsetHeight + elementSectionTop;
@@ -90,7 +77,9 @@ navigation.addEventListener('click', (event) => {
         }
     });
 });
-/*JS Teste*/
+
+/*JS for Nav Ends*/
+
 //MODAL- SLIDER
 function openModal() {
     document.getElementById("myModal").style.display = "block";
